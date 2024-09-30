@@ -1,0 +1,108 @@
+<style>
+
+.datepicker td:focus {
+    background-color:red;
+}
+
+input {
+    resize: none;
+    line-height: 10px;
+    font-size: large;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 200px;
+}
+
+.datepicker th, .datepicker td, .datepicker tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.unfocused {
+    background-color: lightgray;
+}
+
+.yearpicker {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+</style>
+
+<body>
+    <div style="margin-left: 50px; margin-top: 50px; border-style: solid; width: 280px;" >
+        <div style="margin: 5px;">
+            <input type="text" maxlength="20" value="dd / mm / yyyy"></input> 
+            <button style="margin-left: 20px;">Date</button>
+            <br><br>
+            <table style="width:100%" class="yearpicker">
+                <tr>
+                    <td style="width:30%" >
+                        <button><</button>
+                    </td>
+                    <td style="width:60%">
+                        October 2024</td>
+                    <td style="width:30%">
+                        <button>></button>
+                    </td>
+                </tr>
+            </table>
+            <table style="width:100%" class="datepicker">
+                <tr>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                    <th>Su</th>
+                </tr>
+                <tr>
+                    <td class="unfocused">30</td>
+                    <td tabindex="0">1</td>
+                    <td tabindex="0">2</td>
+                    <td tabindex="0">3</td>
+                    <td tabindex="0">4</td>
+                    <td tabindex="0">5</td>
+                    <td tabindex="0">6</td>
+                </tr>
+                    <td tabindex="0">7</td>
+                    <td tabindex="0">8</td>
+                    <td tabindex="0">9</td>
+                    <td tabindex="0">10</td>
+                    <td tabindex="0">11</td>
+                    <td tabindex="0">12</td>
+                    <td tabindex="0">13</td>
+                <tr>   
+                    <td tabindex="0">14</td>
+                    <td tabindex="0">15</td>
+                    <td tabindex="0">16</td>
+                    <td tabindex="0">17</td>
+                    <td tabindex="0">18</td>
+                    <td tabindex="0">19</td>
+                    <td tabindex="0">20</td>
+                </tr>
+                <tr>
+                    <td tabindex="0">21</td>
+                    <td tabindex="0">22</td>
+                    <td tabindex="0">23</td>
+                    <td tabindex="0">24</td>
+                    <td tabindex="0">25</td>
+                    <td tabindex="0">26</td>
+                    <td tabindex="0">27</td>
+                </tr>
+                <tr>
+                    <td tabindex="0">28</td>
+                    <td tabindex="0">29</td>
+                    <td tabindex="0">30</td>
+                    <td tabindex="0">31</td>
+                    <td class="unfocused">1</td>
+                    <td class="unfocused">2</td>
+                    <td class="unfocused">3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
